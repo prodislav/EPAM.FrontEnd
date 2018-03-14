@@ -1,0 +1,67 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-image: url(img/sport.jpg);
+  height: 100vh;
+}
+
+nav{
+  position: relative;
+  height: inherit;
+}
+
+ul{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+ul li{
+  height: auto;
+  float: left;
+  width: 25%;
+  line-height: 33.33vh;
+}
+
+header a{
+  letter-spacing: 10px;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: white;
+}
+
+header li:hover a{
+  color: rgba(0,0,0,.7);
+}
+
+header li:hover{
+  cursor: pointer;
+  background-color: rgba(255,255,255,.4)
+}
+
+.text-list div:nth-of-type(2n){
+  background-color: lightgray;
+}
+
+div {
+  padding: 25px 0 24px 0;
+}
+
+a{
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+section a{
+  color: black
+}
