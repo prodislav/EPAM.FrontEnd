@@ -24,7 +24,7 @@ ul{
   width: 100%;
 }
 
-ul li{
+header nav ul li{
   height: auto;
   float: left;
   width: 25%;
@@ -47,12 +47,23 @@ header li:hover{
   background-color: rgba(255,255,255,.4)
 }
 
-.text-list div:nth-of-type(2n){
-  background-color: lightgray;
+.text-list h1{
+  background-color: black;
+  margin: 0;
+  padding: 50px 0;
+  color: white;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 3em;
 }
 
-div {
-  padding: 25px 0 24px 0;
+.text-list>div{
+  padding: 20px 100px;
+  text-indent: 20px;
+}
+
+.text-list div:nth-of-type(2n){
+  background-color: lightgray;
 }
 
 a{
@@ -62,6 +73,19 @@ a{
   font-weight: bold;
 }
 
+section>div>div{
+  width: 100%;
+}
+
 section a{
-  color: black
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  line-height: 23px;
+  color: black;
+  text-decoration: line-through;
+}
+
+section a:hover{
+  font-size: 23px;
 }
