@@ -4,8 +4,9 @@ html, body{
 }
 
 header{
-  background-image: url(img/sport.jpg);
-  height: 100vh;
+    background: url(img/sport.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
 }
 
 nav{
@@ -25,10 +26,9 @@ ul{
 }
 
 header nav ul li{
-  height: auto;
   float: left;
   width: 25%;
-  line-height: 33.33vh;
+  line-height: 32.6vh;
 }
 
 header a{
@@ -36,6 +36,8 @@ header a{
   font-size: 35px;
   text-transform: uppercase;
   color: white;
+  height: 100%;
+  width: 100%;
 }
 
 header li:hover a{
@@ -59,7 +61,6 @@ header li:hover{
 
 .text-list>div{
   padding: 20px 100px;
-  text-indent: 20px;
 }
 
 .text-list div:nth-of-type(2n){
@@ -88,4 +89,62 @@ section a{
 
 section a:hover{
   font-size: 23px;
+}
+
+@media screen and (max-width: 1450px) {
+  header nav ul li{
+    width: 33.3%;
+    line-height: 24.18vh;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  header a{
+    letter-spacing: 5px;
+    font-size: 25px;
+  }
+
+  .text-list>div{
+    padding: 10px 50px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  header a{
+    letter-spacing: 5px;
+    font-size: 25px;
+  }
+
+  header nav ul li{
+    width: 50%;
+    line-height: 16vh;
+  }
+
+  .text-list>div{
+    padding: 5px 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header a{
+    font-size: 20px;
+  }
+
+  header nav ul li{
+    width: 100%;
+    line-height: 8.2vh;
+  }
+
+  .text-list h1{
+    font-size: 1.7em;
+  }
+}
+
+/* Устанавливает минимальную ширину для мобилок равной 400px совместно с */
+/* <meta name="viewport" content="width=400, initial-scale=1"> */
+/* в head html'a */
+@media all and (max-width: 400px) {
+  html{
+    min-width: 400px;
+  }
 }
