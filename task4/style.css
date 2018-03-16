@@ -100,7 +100,7 @@ table, thead, tbody, tr{
   height: 100%;
 }
 
-td, th{
+table:first-child td, table:first-child th{
   width: 50%;
 }
 
