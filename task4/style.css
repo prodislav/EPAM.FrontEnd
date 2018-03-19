@@ -104,6 +104,22 @@ table:first-child td, table:first-child th{
   width: 50%;
 }
 
+#phones tr:nth-of-type(3) td:nth-of-type(2), #phones tr:nth-of-type(8) td:nth-of-type(2){
+  text-transform: uppercase;
+}
+
+#phones th{
+  text-align: left
+}
+
+#phones tr td:nth-of-type(2){
+  text-transform: capitalize;
+}
+
+#phones tr td:nth-of-type(5), #phones tr td:nth-of-type(6){
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 1450px) {
   header nav ul li{
     width: 33.3%;
