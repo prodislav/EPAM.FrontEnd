@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
+/* нужно менять! */
 html, body{
-    margin: 0;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-header{
+.header{
     height: 400px;
     background-color: #EFF8ED;
     overflow: hidden;
     position: relative;
+    width: 1200px;
+    margin: 0 auto;
 }
 
-.block-with-text{
+.header-block{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,7 +25,7 @@ header{
     padding: 5px;
 }
 
-.head-text{
+.header-block__text{
     font-family: 'Kaushan Script', cursive;
     font-size: 40px;
     background-color: inherit;
@@ -31,13 +35,10 @@ header{
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-}
-
-.head-text span:not(:last-of-type){
     text-transform: capitalize;
 }
 
-.container{
+.header-image{
     width: 1200px;
     margin: 0 auto;
 }
@@ -53,13 +54,8 @@ header{
     background-size: 460px 120px;
 }
 
-.image{
-    transform: translateY(-50px);
-
-}
-
-.row{
-    transform: rotate(-5deg);
+.header-image__line{
+    transform: translateY(-50px) rotate(-5deg);
 }
 
 .icon-facebook{
@@ -106,25 +102,32 @@ header{
     background-position-x: 100%;
 }
 
-#buttons{
-    height: 500px;
-}
-
-#buttons .light{
+.buttons_theme_light{
     border: 3px rgba(0, 0, 0, 0.1) solid;
 }
 
-
-#buttons .dark{
+.buttons_theme_dark{
     background-color: #333333;
+    margin-bottom: 20px;
 }
 
-.light, .dark{
+.buttons_theme_light, .buttons_theme_dark{
     padding: 50px;
-    margin: 20px;
+    margin-top: 20px;
 }
 
-.light button, .dark button{
+.buttons_theme_light__button_color_pink,
+.buttons_theme_light__button_color_green,
+.buttons_theme_light__button_color_blue,
+.buttons_theme_light__button_color_red,
+.buttons_theme_light__button_color_orange,
+.buttons_theme_light__button_color_yellow,
+.buttons_theme_dark__button_color_pink,
+.buttons_theme_dark__button_color_green,
+.buttons_theme_dark__button_color_blue,
+.buttons_theme_dark__button_color_red,
+.buttons_theme_dark__button_color_orange,
+.buttons_theme_dark__button_color_yellow{
     border: none;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     color: white;
@@ -133,61 +136,60 @@ header{
     text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);
     padding: 5px 10px;
     font-size: 15px;
-}
-
-.dark button{
-    border: 1px black solid;
-}
-
-button{
     display: inline-block;
     border-radius: 5px;
 }
 
+/* не понятно!!!*/
+.buttons_theme_dark button{
+    border: 1px black solid;
+}
+
+/* !!! */
 .button-line:not(:last-of-type){
     margin-bottom: 20px;
 }
 
-button.pink{
+.button_color_pink{
     background: linear-gradient(to bottom, #ff5dc3, #f71e9e);
     font-size: 25px;
 }
 
-button.green{
+.button_color_green{
     background: linear-gradient(to bottom, #a8cb3b, #9fcc17);
 }
 
-button.blue{
+.button_color_blue{
     background: linear-gradient(to bottom, #5e9fe8, #4291eb);
 }
 
-button.red{
+.button_color_red{
     background: linear-gradient(to bottom, #ec5c5c, #eb4141);
 }
 
-button.orange{
+.button_color_orange{
     background: linear-gradient(to bottom, #ff8440, #ff6e1a);
 }
 
-button.yellow{
+.button_color_yellow{
     background: linear-gradient(to bottom, #ffc650, #feb91e);
 }
 
-.dark .blue{
+.buttons_theme_dark__button_color_blue{
     font-size: 14px;
     padding: 3px 10px;
 }
 
-.dark .orange{
+.buttons_theme_dark__button_color_orange{
     font-size: 14px;
     padding: 3px 10px;
 }
 
-.dark .yellow{
+.buttons_theme_dark__button_color_yellow{
     font-size: 14px;
     padding: 4px 10px;
 }
 
-.dark .red{
+.buttons_theme_dark__button_color_red{
     padding: 6px 10px;
 }
