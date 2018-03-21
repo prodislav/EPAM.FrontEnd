@@ -6,7 +6,7 @@ html, body{
   margin: 0 auto;
 }
 
-.t5-header{
+.t6-header{
     height: 400px;
     background-color: #EFF8ED;
     overflow: hidden;
@@ -15,7 +15,7 @@ html, body{
     margin: 0 auto;
 }
 
-.t5-header-block{
+.t6-header-block{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,7 +25,7 @@ html, body{
     padding: 5px;
 }
 
-.t5-header-block__text{
+.t6-header-block__text{
     font-family: 'Kaushan Script', cursive;
     font-size: 40px;
     background-color: inherit;
@@ -38,12 +38,12 @@ html, body{
     text-transform: capitalize;
 }
 
-.t5-header-image{
+.t6-header-image{
     width: 1200px;
     margin: 0 auto;
 }
 
-.t5-icon{
+.t6-icon{
     display: inline-block;
     background-image: url(img/icons.png);
     width: 40px;
@@ -54,80 +54,80 @@ html, body{
     background-size: 460px 120px;
 }
 
-.t5-header-image__line{
+.t6-header-image__line{
     transform: translateY(-50px) rotate(-5deg);
 }
 
-.t5-icon-facebook{
+.t6-icon-facebook{
     background-position-x: 0;
 }
 
-.t5-icon-dots{
+.t6-icon-dots{
     background-position-x: 10%;
 }
 
-.t5-icon-dribbble{
+.t6-icon-dribbble{
     background-position-x: 20%;
 }
 
-.t5-icon-google{
+.t6-icon-google{
     background-position-x: 30%;
 }
 
-.t5-icon-linked{
+.t6-icon-linked{
     background-position-x: 40%;
 }
 
-.t5-icon-pinterest{
+.t6-icon-pinterest{
     background-position-x: 50%;
 }
 
-.t5-icon-wifi{
+.t6-icon-wifi{
     background-position-x: 60%;
 }
 
-.t5-icon-skype{
+.t6-icon-skype{
     background-position-x: 70%;
 }
 
-.t5-icon-twitter{
+.t6-icon-twitter{
     background-position-x: 80%;
 }
 
-.t5-icon-vine{
+.t6-icon-vine{
     background-position-x: 90%;
 }
 
-.t5-icon-youtube{
+.t6-icon-youtube{
     background-position-x: 100%;
 }
 
-.t5-buttons_theme_light{
+.t6-buttons_theme_light{
     border: 3px rgba(0, 0, 0, 0.1) solid;
 }
 
-.t5-buttons_theme_dark{
+.t6-buttons_theme_dark{
     background-color: #333333;
     margin-bottom: 20px;
 }
 
-.t5-buttons_theme_light, .buttons_theme_dark{
+.t6-buttons_theme_light, .buttons_theme_dark{
     padding: 50px;
     margin-top: 20px;
 }
 
-.t5-buttons_theme_light__button_color_pink,
-.t5-buttons_theme_light__button_color_green,
-.t5-buttons_theme_light__button_color_blue,
-.t5-buttons_theme_light__button_color_red,
-.t5-buttons_theme_light__button_color_orange,
-.t5-buttons_theme_light__button_color_yellow,
-.t5-buttons_theme_dark__button_color_pink,
-.t5-buttons_theme_dark__button_color_green,
-.t5-buttons_theme_dark__button_color_blue,
-.t5-buttons_theme_dark__button_color_red,
-.t5-buttons_theme_dark__button_color_orange,
-.t5-buttons_theme_dark__button_color_yellow{
+.t6-buttons_theme_light__button_color_pink,
+.t6-buttons_theme_light__button_color_green,
+.t6-buttons_theme_light__button_color_blue,
+.t6-buttons_theme_light__button_color_red,
+.t6-buttons_theme_light__button_color_orange,
+.t6-buttons_theme_light__button_color_yellow,
+.t6-buttons_theme_dark__button_color_pink,
+.t6-buttons_theme_dark__button_color_green,
+.t6-buttons_theme_dark__button_color_blue,
+.t6-buttons_theme_dark__button_color_red,
+.t6-buttons_theme_dark__button_color_orange,
+.t6-buttons_theme_dark__button_color_yellow{
     border: none;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     color: white;
@@ -141,55 +141,55 @@ html, body{
 }
 
 /* не понятно!!!*/
-.t5-buttons_theme_dark button{
+.t6-buttons_theme_dark button{
     border: 1px black solid;
 }
 
 /* !!! */
-.t5-button-line:not(:last-of-type){
+.t6-button-line:not(:last-of-type){
     margin-bottom: 20px;
 }
 
-.t5-button_color_pink{
+.t6-button_color_pink{
     background: linear-gradient(to bottom, #ff5dc3, #f71e9e);
     font-size: 25px;
 }
 
-.t5-button_color_green{
+.t6-button_color_green{
     background: linear-gradient(to bottom, #a8cb3b, #9fcc17);
 }
 
-.t5-button_color_blue{
+.t6-button_color_blue{
     background: linear-gradient(to bottom, #5e9fe8, #4291eb);
 }
 
-.t5-button_color_red{
+.t6-button_color_red{
     background: linear-gradient(to bottom, #ec5c5c, #eb4141);
 }
 
-.t5-button_color_orange{
+.t6-button_color_orange{
     background: linear-gradient(to bottom, #ff8440, #ff6e1a);
 }
 
-.t5-button_color_yellow{
+.t6-button_color_yellow{
     background: linear-gradient(to bottom, #ffc650, #feb91e);
 }
 
-.t5-buttons_theme_dark__button_color_blue{
+.t6-buttons_theme_dark__button_color_blue{
     font-size: 14px;
     padding: 3px 10px;
 }
 
-.t5-buttons_theme_dark__button_color_orange{
+.t6-buttons_theme_dark__button_color_orange{
     font-size: 14px;
     padding: 3px 10px;
 }
 
-.t5-buttons_theme_dark__button_color_yellow{
+.t6-buttons_theme_dark__button_color_yellow{
     font-size: 14px;
     padding: 4px 10px;
 }
 
-.t5-buttons_theme_dark__button_color_red{
+.t6-buttons_theme_dark__button_color_red{
     padding: 6px 10px;
 }
