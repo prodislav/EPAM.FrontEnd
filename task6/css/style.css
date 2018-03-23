@@ -12,7 +12,7 @@
     overflow: hidden;
 }
 
-.t6-header__block{
+.t6-header__text-block{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,11 +23,11 @@
 }
 
 .t6-header__text{
+    padding: 20px;
+    border: 4px black solid;
     font-family: 'Kaushan Script', cursive;
     font-size: 40px;
     background-color: inherit;
-    padding: 20px;
-    border: 4px black solid;
     background: url(../img/texture2.jpg);
     background-size: cover;
     -webkit-text-fill-color: transparent;
@@ -42,12 +42,12 @@
 
 .t6-image__icon{
     display: inline-block;
-    background-image: url(../img/icons.png);
     width: 40px;
     height: 40px;
-    border-radius: 10px;
-    background-position-y: 80px;
     margin: 15.5px;
+    border-radius: 10px;
+    background-image: url(../img/icons.png);
+    background-position-y: 80px;
     background-size: 460px 120px;
 }
 
@@ -55,47 +55,47 @@
     transform: translateY(-50px) rotate(-5deg);
 }
 
-.t6-icon__facebook{
+.t6-image__icon_facebook{
     background-position-x: 0;
 }
 
-.t6-icon__dots{
+.t6-image__icon_dots{
     background-position-x: 10%;
 }
 
-.t6-icon__dribbble{
+.t6-image__icon_dribbble{
     background-position-x: 20%;
 }
 
-.t6-icon__google{
+.t6-image__icon_google{
     background-position-x: 30%;
 }
 
-.t6-icon__linked{
+.t6-image__icon_linked{
     background-position-x: 40%;
 }
 
-.t6-icon__pinterest{
+.t6-image__icon_pinterest{
     background-position-x: 50%;
 }
 
-.t6-icon__wifi{
+.t6-image__icon_wifi{
     background-position-x: 60%;
 }
 
-.t6-icon__skype{
+.t6-image__icon_skype{
     background-position-x: 70%;
 }
 
-.t6-icon__twitter{
+.t6-image__icon_twitter{
     background-position-x: 80%;
 }
 
-.t6-icon__vine{
+.t6-image__icon_vine{
     background-position-x: 90%;
 }
 
-.t6-icon__youtube{
+.t6-image__icon_youtube{
     background-position-x: 100%;
 }
 
@@ -109,20 +109,20 @@
 }
 
 .t6-buttons-section__element{
+    width: 1070px;
     padding: 50px;
     margin: 30px auto;
-    width: 1070px;
 }
 
 .t6-button{
+    display: inline-block;
+    color: white;
     border: none;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    color: white;
     text-transform: capitalize;
     font-weight: bold;
     text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);
     font-size: 14px;
-    display: inline-block;
     border-radius: 5px;
 }
 
