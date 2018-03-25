@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
+body{
+    min-width: 1200px;
+}
 .t6-header_white{
     background-color: #EFF8ED;
 }
 
 .t6-header__el{
-    height: 400px;
     position: relative;
+    height: 400px;
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
@@ -16,10 +19,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
     z-index: 200;
-    background-color: rgba(255, 255, 255, .9);
     padding: 5px;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgba(255, 255, 255, .9);
 }
 
 .t6-header__text{
@@ -30,9 +33,10 @@
     background-color: inherit;
     background: url(../img/texture2.jpg);
     background-size: cover;
+    text-transform: capitalize;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    text-transform: capitalize;
+    background-clip: text;
 }
 
 .t6-header__image{
@@ -47,11 +51,11 @@
     margin: 15.5px;
     border-radius: 10px;
     background-image: url(../img/icons.png);
-    background-position-y: 80px;
     background-size: 460px 120px;
+    background-position-y: 80px;
 }
 
-.t6-image__line{
+.t6-image__line_transform{
     transform: translateY(-50px) rotate(-5deg);
 }
 
@@ -99,13 +103,16 @@
     background-position-x: 100%;
 }
 
-.t6-buttons_theme-light{
+.t6-buttons_border-gray{
     border: 3px rgba(0, 0, 0, 0.1) solid;
 }
 
-.t6-buttons_theme-dark{
+.t6-buttons_border-black{
+    border: 3px #333333 solid;
+}
+
+.t6-buttons_bg-color{
     background-color: #333333;
-    margin-bottom: 20px;
 }
 
 .t6-buttons-section__element{
@@ -115,19 +122,19 @@
 }
 
 .t6-button{
-    display: inline-block;
     color: white;
-    border: none;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     text-transform: capitalize;
     font-weight: bold;
-    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);
     font-size: 14px;
-    border-radius: 5px;
 }
 
 .t6-buttons__button{
+    display: inline-block;
     padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .t6-buttons-section__line:not(:last-of-type){
@@ -164,22 +171,27 @@
 }
 
 .t6-button_green:hover{
+    cursor: pointer;
     background: linear-gradient(to bottom, #a8cb3b 50%, #9fcc17 50%);
 }
 
 .t6-button_blue:hover{
+    cursor: pointer;
     background: linear-gradient(to bottom, #5e9fe8 50%, #4291eb 50%);
 }
 
 .t6-button_red:hover{
+    cursor: pointer;
     background: linear-gradient(to bottom, #ec5c5c 50%, #eb4141 50%);
 }
 
 .t6-button_orange:hover{
+    cursor: pointer;
     background: linear-gradient(to bottom, #ff8440 50%, #ff6e1a 50%);
 }
 
 .t6-button_yellow:hover{
+    cursor: pointer;
     background: linear-gradient(to bottom, #ffc650 50%, #feb91e 50%);
 }
 
