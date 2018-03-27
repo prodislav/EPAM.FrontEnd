@@ -1,0 +1,72 @@
+/*
+#FF6347 tomato
+#FFE4E1 mistyrose
+#F4A460 sandybrown
+*/
+
+
+.vp-header__pic{
+  width: 50%;
+  height: 900px;
+  background-image: url(../img/5.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vp-header__logo{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  line-height: 70px;
+  color: #333333;
+  font-family: Tahoma;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+}
+
+.vp-header__info{
+  display: flex;
+  position: relative;
+  width: 50%;
+  height: 900px;
+  background-color: rgb(240, 226, 215);
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.vp-header__el{
+  display: flex;
+  position: relative;
+}
+
+.vp-header__content{
+  background-color: black;
+  width: 90%;
+  height: 500px;
+}
+
+.vp-header__nav{
+  position: absolute;
+  background-color: red;
+  height: 70px;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+  display: flex;
+}
+
+.vp-header__nav-list{
+  margin-left: 50px;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.vp-header__nav-item{
+  line-height: 70px;
+}
