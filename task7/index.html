@@ -1,8 +1,19 @@
-<!-- 
+<!--
     block__element_mod-name
-    width-s - small size 25% from device width
-    width-m - medium size 50% from device width
-    width-l - large size 100% from device width
+    width-s - 25%
+    width-m - 50%
+    width-l - 100%
+    height-s - 300px
+    height-m - 900px
+    !!!
+    -исправить модификаторы,
+    -добавить модификатор на размер шрифта
+    -поставлять блоки в другие элементы
+    -вынести модификаторы в отдельный css file
+    -добавить бургер с меню
+    -прописать медиа на шрифты
+    -пройтись по дизайну
+    </fieldset>
  -->
 
 <!DOCTYPE html>
@@ -12,6 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -26,20 +38,20 @@
                 <div class="vp-section__logo">stimulus</div>
 
                 <div class="vp-section__nav-list">
-                    <div class="vp-section__nav-item"> 
-                        <a href="" class="vp-section__nav-link">home</a> 
+                    <div class="vp-section__nav-item">
+                        <a href="#experiences" class="vp-section__nav-link">home</a>
                     </div>
-                    <div class="vp-section__nav-item"> 
-                        <a href="" class="vp-section__nav-link">about me</a>
+                    <div class="vp-section__nav-item">
+                        <a href="#experiences" class="vp-section__nav-link">about me</a>
                     </div>
-                    <div class="vp-section__nav-item"> 
-                        <a href="" class="vp-section__nav-link">experiences</a>
+                    <div class="vp-section__nav-item">
+                        <a href="#experiences" class="vp-section__nav-link">experiences</a>
                     </div>
-                    <div class="vp-section__nav-item"> 
-                        <a href="" class="vp-section__nav-link">testimonial</a>
+                    <div class="vp-section__nav-item">
+                        <a href="#experiences" class="vp-section__nav-link">testimonial</a>
                     </div>
-                    <div class="vp-section__nav-item"> 
-                        <a href="" class="vp-section__nav-link">contact</a>
+                    <div class="vp-section__nav-item">
+                        <a href="#experiences" class="vp-section__nav-link">contact</a>
                     </div>
                 </div>
 
@@ -47,14 +59,14 @@
 
             <div class="vp-section__pic-block vp-section__pic-block_width-m">
                 <div class="vp-block">
-                    <div class="vp-block__content-pic vp-block__content-pic_man-sofa vp-block__content-pic_height-m"></div>
+                    <div class="vp-block__content-pic vp-block__content-pic_5 vp-block__content-pic_height-m"></div>
                 </div>
             </div>
 
             <div class="vp-section__info-block vp-section__info-block_width-m vp-section__info-block_bg-color-yellow">
                 <div class="vp-block">
                     <div class="vp-block__el vp-block__el_height-m">
-                        <div class="vp-block__content-info">
+                        <div class="vp-block__content-info vp-block__content-info_center">
 
                             <div class="vp-text">
                                 <div class="vp-block__subtitle vp-text_bold vp-text_upper">
@@ -88,253 +100,353 @@
     <section id="about" class="vp-section">
         <div class="vp-section__content">
 
-            <div class="vp-section__row">
-                <div class="vp-section__info-block vp-section__info-block_width-m">
-                    <div class="vp-block">
-                        <div class="vp-block__el vp-block__el_height-s">
-                            <div class="vp-block__content-info">
-    
-                                <div class="vp-text">
-                                    <div class="vp-block__title">
-                                        Donec auctor
-                                    </div>
-                                </div>
+            <div class="vp-section__info-block vp-section__info-block_width-m">
+                <div class="vp-block">
+                    <div class="vp-block__el vp-block__el_height-s">
+                        <div class="vp-block__content-info">
 
-                                <div class="vp-text">
-                                    <div class="vp-block__subtitle">
-                                        Sed vulputate vitae diam quis bibendum
-                                    </div>
-                                </div>
-    
-                                <div class="vp-text">
-                                    <div class="vp-block__discr">
-                                        Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar 
-                                        ante. Duis dui urna, faucibus eget felis eu,
-                                        iaculis congue sem. Mauris convallis eros massa.
-                                    </div>
-                                </div>
-
-                                <div class="vp-text">
-                                    <div class="vp-block__discr">
-                                        Quisqui viverra iaculis aliquam. Etiam volutpat, justo non aliquam 
-                                        bibendum, sem nibn mollis erat, quis porta odio at velit.
-                                    </div>
-                                </div>
-    
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="vp-section__pic-block vp-section__pic-block_width-s">
-                        <div class="vp-block">
-                            <div class="vp-block__content-pic vp-block__content-pic_man-sofa vp-block__content-pic_height-s"></div>
-                        </div>
-                    </div>
-
-                    <div class="vp-section__info-block vp-section__info-block_width-s">
-                            <div class="vp-block">
-                                <div class="vp-block__el vp-block__el_height-s">
-                                    <div class="vp-block__content-info">
-            
-                                        <div class="vp-text">
-                                            <div class="vp-block__title">
-                                                Donec auctor
-                                            </div>
-                                        </div>
-        
-                                        <div class="vp-text">
-                                            <div class="vp-block__subtitle">
-                                                Sed vulputate vitae diam quis bibendum
-                                            </div>
-                                        </div>
-            
-                                        <div class="vp-text">
-                                            <div class="vp-block__discr">
-                                                Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar 
-                                                ante. Duis dui urna, faucibus eget felis eu,
-                                                iaculis congue sem. Mauris convallis eros massa.
-                                            </div>
-                                        </div>
-        
-                                        <div class="vp-text">
-                                            <div class="vp-block__discr">
-                                                Quisqui viverra iaculis aliquam. Etiam volutpat, justo non aliquam 
-                                                bibendum, sem nibn mollis erat, quis porta odio at velit.
-                                            </div>
-                                        </div>
-            
-        
-                                    </div>
+                            <div class="vp-text">
+                                <div class="vp-block__title">
+                                    Donec auctor
                                 </div>
                             </div>
+
+                            <div class="vp-text">
+                                <div class="vp-block__subtitle">
+                                    Sed vulputate vitae diam quis bibendum
+                                </div>
+                            </div>
+
+                            <div class="vp-text">
+                                <div class="vp-block__discr">
+                                    Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar
+                                    ante. Duis dui urna, faucibus eget felis eu,
+                                    iaculis congue sem. Mauris convallis eros massa.
+                                </div>
+                            </div>
+
+                            <div class="vp-text">
+                                <div class="vp-block__discr">
+                                    Quisqui viverra iaculis aliquam. Etiam volutpat, justo non aliquam
+                                    bibendum, sem nibn mollis erat, quis porta odio at velit.
+                                </div>
+                            </div>
+
                         </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="vp-section__row">
-                <div class="vp-section__info vp-section__info-block_width-s">
-                    <div class="vp-section__content">
-                        <div class="vp-section__icon"></div>
-                        <div class="vp-section__subtitle"></div>
-                        <div class="vp-section__discription"></div>
-                    </div>
+            <div class="vp-section__pic-block vp-section__pic-block_width-s">
+                <div class="vp-block">
+                    <div class="vp-block__content-pic vp-block__content-pic_1 vp-block__content-pic_height-s"></div>
                 </div>
-
-                <div class="vp-section__info vp-section__info-block_width-s">
-                    <div class="vp-section__content">
-                        <div class="vp-section__icon"></div>
-                        <div class="vp-section__subtitle"></div>
-                        <div class="vp-section__discription"></div>
-                    </div>
-                </div>
-
-                <div class="vp-section__info vp-section__info-block_width-s">
-                    <div class="vp-section__content">
-                        <div class="vp-section__icon"></div>
-                        <div class="vp-section__subtitle"></div>
-                        <div class="vp-section__discription"></div>
-                    </div>
-                </div>
-
             </div>
+
+            <div class="vp-section__info-block vp-section__info-block_width-s vp-section__info-block_bg-color-dark-yellow">
+                <div class="vp-block">
+                    <div class="vp-block__el vp-block__el_height-s">
+                        <div class="vp-block__content-info">
+
+                            <div class="vp-text">
+                                <div class="vp-block__title vp-text_capitalize vp-text_color-white">
+                                    my skills
+                                </div>
+                            </div>
+
+                            <div class="vp-text">
+                                <div class="vp-block__subtitle vp-text_capitalize vp-text_color-white">
+                                    photoshop.HTML CSS JS. web design
+                                </div>
+                            </div>
+
+                            <div class="vp-text">
+                                  <div class="vp-block__text-bar vp-text_ex-bold vp-text_capitalize">
+                                    <span>Frontend design</span>
+                                    <span class="vp-text_color-white">70</span>
+                                  </div>
+                                  <div class="vp-block__bar-1">
+                                      <div class="vp-block__bar-1-progress"></div>
+                                  </div>
+                                  <div class="vp-block__text-bar vp-text_ex-bold">
+                                    <span>Backend proccesing</span>
+                                    <span class="vp-text_color-white">90</span>
+                                  </div>
+                                  <div class="vp-block__bar-2">
+                                      <div class="vp-block__bar-2-progress"></div>
+                                  </div>
+
+                                  <div class="vp-block__text-bar vp-text_ex-bold vp-text_upper">
+                                    <span>html5&css3</span>
+                                    <span class="vp-text_color-white">80</span>
+                                  </div>
+                                  <div class="vp-block__bar-3">
+                                      <div class="vp-block__bar-3-progress"></div>
+                                  </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+      </section>
+
+      <section id="about" class="vp-section">
+          <div class="vp-section__content">
+
+            <div class="vp-section__info-block vp-section__info-block_width-s vp-section__info-block_bg-color-dark-yellow">
+                <div class="vp-block">
+                    <div class="vp-block__el vp-block__el_height-s">
+                        <div class="vp-block__content-info">
+
+                            <div class="vp-text vp-text_color-white">
+                                <div class="vp-block__icon vp-block__icon_desktop vp-text_center">
+                                  <i class="fa fa-desktop" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div class="vp-text vp-text_capitalize">
+                                <div class="vp-block__title vp-text_color-white vp-text_center">
+                                    interface design
+                                </div>
+                            </div>
+
+                            <div class="vp-text">
+                                <div class="vp-block__discr vp-text_color-white vp-text_center">
+                                    Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar
+                                    ante.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vp-section__info-block vp-section__info-block_width-s vp-section__info-block_bg-color-red">
+                <div class="vp-block">
+                    <div class="vp-block__el vp-block__el_height-s">
+                        <div class="vp-block__content-info">
+
+                            <div class="vp-text vp-text_color-white">
+                                <div class="vp-block__icon vp-block__icon_desktop vp-text_center">
+                                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div class="vp-text vp-text_capitalize">
+                                <div class="vp-block__title vp-text_color-white vp-text_center">
+                                    media strategy
+                                </div>
+                            </div>
+
+                            <div class="vp-text">
+                                <div class="vp-block__discr vp-text_color-white vp-text_center">
+                                  Curabitur at pulvinar
+                                  ante. Duis dui urna, faucibus eget felis eu,
+                                  iaculis congue sem
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vp-section__info-block vp-section__info-block_width-s vp-section__info-block_bg-color-black">
+                <div class="vp-block">
+                    <div class="vp-block__el vp-block__el_height-s">
+                        <div class="vp-block__content-info">
+
+                            <div class="vp-text vp-text_color-white">
+                                <div class="vp-block__icon vp-block__icon_desktop vp-text_center">
+                                  <i class="fa fa-table" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div class="vp-text vp-text_capitalize">
+                                <div class="vp-block__title vp-text_color-white vp-text_center">
+                                    mobile app
+                                </div>
+                            </div>
+
+                            <div class="vp-text">
+                                <div class="vp-block__discr vp-text_color-white vp-text_center">
+                                    Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vp-section__info-block vp-section__info-block_width-s">
+                <div class="vp-block">
+                    <div class="vp-block__el vp-block__el_height-s">
+                        <div class="vp-block__content-info">
+
+                            <div class="vp-text">
+                                <div class="vp-block__icon vp-block__icon_desktop vp-text_center">
+                                  <i class="fa fa-html5" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div class="vp-text vp-text_capitalize">
+                                <div class="vp-block__title vp-text_center">
+                                    coding
+                                </div>
+                            </div>
+
+                            <div class="vp-text">
+                                <div class="vp-block__discr vp-text_center">
+                                    Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+    </section>
+
+    <section id="experiences" class="vp-section">
+        <div class="vp-section__content">
+
+          <div class="vp-section__pic-block vp-section__pic-block_width-m">
+              <div class="vp-block">
+                  <div class="vp-block__content-pic vp-block__content-pic_4 vp-block__content-pic_height-s"></div>
+              </div>
+          </div>
+
+          <div class="vp-section__info-block vp-section__info-block_width-m vp-section__info-block_bg-color-red">
+              <div class="vp-block">
+                  <div class="vp-block__el vp-block__el_height-s">
+                      <div class="vp-block__content-info">
+
+
+
+                      </div>
+                  </div>
+              </div>
+          </div>
 
         </div>
     </section>
 
     <section id="experiences" class="vp-section">
-        <div class="vp-section__el">
-            <div class="vp-section__pic-block">
-                <div class="vp-section-pic"></div>
-            </div>
+        <div class="vp-section__content vp-section__content_row-reverse">
 
-            <div class="vp-section__info-block vp-section__info-block_size-small vp-section__info-block_bgcolor-black">
-                <div class="vp-block">
-                    <div class="vp-block__content">
-                        <div class="vp-block__title"></div>
-                        <div class="vp-block__discription"></div>
-                        <div class="vp-block__item">
-                            <div class="vp-block__icon"></div>
-                            <div class="vp-block__subtitle"></div>
-                            <div class="vp-block__date"></div>
-                            <div class="vp-block__subtitle"></div>   
-                        </div>
-                        <div class="vp-block__item">
-                            <div class="vp-block__icon"></div>
-                            <div class="vp-block__subtitle"></div>
-                            <div class="vp-block__date"></div>
-                            <div class="vp-block__subtitle"></div>   
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="vp-section__pic-block vp-section__pic-block_width-m">
+              <div class="vp-block">
+                  <div class="vp-block__content-pic vp-block__content-pic_3 vp-block__content-pic_height-s">
 
-            <div class="vp-section__info-block vp-section__info-block_size-m vp-section__info-block_bgcolor-black">
-                <div class="vp-block">
-                    <div class="vp-block__content">
-                        <div class="vp-block__title"></div>
-                        <div class="vp-block__discription"></div>
-                        <div class="vp-block__item">
+                  </div>
+              </div>
+          </div>
 
-                        </div>
-                        <div class="vp-block__item">
-                            <div class="vp-block__icon"></div>
-                            <div class="vp-block__title"></div>
-                            <div class="vp-block__date"></div>
-                            <div class="vp-block__discription"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="vp-section__info-block vp-section__info-block_width-m vp-section__info-block_bg-color-dark-yellow">
+              <div class="vp-block">
+                  <div class="vp-block__el vp-block__el_height-s">
+                      <div class="vp-block__content-info">
 
-            <div class="vp-section__info">
-                <div class="vp-section__content">
-                    <div class="vp-section__title"></div>
-                    <div class="vp-section__discription"></div>
-                    <div class="vp-section__item">
-                        <div class="vp-section__icon"></div>
-                        <div class="vp-section__subtitle"></div>
-                        <div class="vp-section__date"></div>
-                        <div class="vp-section__subtitle"></div>   
-                    </div>
-                    <div class="vp-section__item">
-                        <div class="vp-section__icon"></div>
-                        <div class="vp-section__subtitle"></div>
-                        <div class="vp-section__date"></div>
-                        <div class="vp-section__subtitle"></div>   
-                    </div>
-                </div>
-            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
-            <div class="vp-section__pic">
-
-            </div>
         </div>
     </section>
 
     <section id="testimonial" class="vp-testimonial">
-        <div class="vp-textimonial__el">
-            <div class="vp-testimonial__info">
-                <div class="vp-testimonial__content">
-                    <div class="vp-testimonial__icon"></div>
-                    <div class="vp-testimonial__title"></div>
-                    <div class="vp-testimonial__discription"></div>
-                </div>
-            </div>
+        <div class="vp-section__content">
+          <div class="vp-section__info-block vp-section__info-block_width-l">
+              <div class="vp-block">
+                  <div class="vp-block__el vp-block__content-pic vp-block__content-pic_6 vp-block__el_height-s">
+                      <div class="vp-block__content-info">
+
+                          <div class="vp-text vp-text_color-white">
+                              <div class="vp-block__icon vp-block__icon_desktop vp-text_center">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </div>
+                          </div>
+
+                          <div class="vp-text vp-text_capitalize">
+                              <div class="vp-block__title vp-text_color-white vp-text_center">
+                                  interface design
+                              </div>
+                          </div>
+
+                          <div class="vp-text">
+                              <div class="vp-block__discr vp-text_color-white vp-text_center">
+                                  Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar
+                                  ante.
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
     </section>
 
     <section id="contact" class="vp-contact">
-        <div class="vp-contact__el">
-            <div class="vp-contact__form">
-                <div class="vp-contact__title"></div>
-                <div class="vp-contact__discription"></div>
-                <div class="vp-contact__input"></div>
-                <div class="vp-contact__input"></div>
-                <div class="vp-contact__item"></div>
-                <div class="vp-contact__button"></div>
-            </div>
+        <div class="vp-section__content">
+          <div class="vp-section__info-block vp-section__info-block_width-m vp-section__info-block_bg-color-red">
+              <div class="vp-block">
+                  <div class="vp-block__el vp-block__el_height-s">
+                      <div class="vp-block__content-info">
 
-            <div class="vp-contact__pic"></div>
 
-            <div class="vp-contact__info">
-                <div class="vp-contact__subtitle"></div>
-                <div class="vp-contact__discription"></div>
-                <div class="vp-contact__subtitle"></div>
-                <div class="vp-contact__item">
-                    <div class="vp-contact__icon"></div>
-                    <div class="vp-contact__discription"></div>
-                </div>
-                <div class="vp-contact__item">
-                    <div class="vp-contact__icon"></div>
-                    <div class="vp-contact__discription"></div>
-                </div>
-                <div class="vp-contact__item">
-                    <div class="vp-contact__icon"></div>
-                    <div class="vp-contact__discription"></div>
-                </div>
-            </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="vp-section__pic-block vp-section__pic-block_width-s">
+              <div class="vp-block">
+                  <div class="vp-block__content-pic vp-block__content-pic_2 vp-block__content-pic_height-s">
+
+                  </div>
+              </div>
+          </div>
+
+          <div class="vp-section__info-block vp-section__info-block_width-s vp-section__info-block_bg-color-black">
+              <div class="vp-block">
+                  <div class="vp-block__el vp-block__el_height-s">
+                      <div class="vp-block__content-info">
+
+
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+
         </div>
     </section>
 
-    <footer>
-        <div class="vp-footer">
+    <section id="testimonial" class="vp-testimonial">
+        <div class="vp-section__content">
+          <div class="vp-section__info-block vp-section__info-block_width-l">
+              <div class="vp-block">
+                  <div class="vp-block__el vp-block__el_height-s">
+                      <div class="vp-block__content-info">
 
-            <div class="vp-footer__info">
-                <div class="vp-footer__content">
-                    <div class="vp-footer__discription"></div>
-                    <div class="vp-footer__links">
-                        <div class="vp-footer__icon vp-footer__icon_facebook"></div>
-                        <div class="vp-footer__icon vp-footer__icon_twitter"></div>
-                        <div class="vp-footer__icon vp-footer__icon_google-plus"></div>
-                        <div class="vp-footer__icon vp-footer__icon_dribbble"></div>
-                        <div class="vp-footer__icon vp-footer__icon_linkedin"></div>
-                    </div>   
-                </div>
-            </div>
 
+
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
-    </footer>
+    </section>
 
 </body>
 </html>
