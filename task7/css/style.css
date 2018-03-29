@@ -157,7 +157,6 @@ body{
 .vp-block__title{
   margin-bottom: 20px;
   font-size: 2.5rem;
-  line-height: 3rem;
   font-weight: 300;
   color: #333333;
 }
@@ -296,13 +295,10 @@ body{
 .vp-block__text-bar{
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
 }
 
 .fa{
   font-size: 2rem;
-  padding-bottom: 20px;
-  margin-top: -20px;
 }
 
 .vp-text_center{
@@ -311,4 +307,36 @@ body{
 
 .vp-section__content_row-reverse{
   flex-direction: row-reverse;
+}
+
+.vp-block-company__icon{
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.vp-block__icon{
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+.vp-block-company__container{
+  display: flex;
+}
+
+.vp-block-company_margin-bot{
+  margin-bottom: 20px;
+}
+
+.vp-text_color-black2{
+  color: #7c2f2d;
+  margin-left: 5px;
+}
+
+.vp-text_size-l{
+  font-size: 1.5rem;
+}
+
+.vp-block__el_height-sm,
+.vp-block__content-pic_height-sm{
+  height: 350px;
 }
