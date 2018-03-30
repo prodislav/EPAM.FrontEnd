@@ -11,16 +11,20 @@
 .vp-section__logo{
     display: flex;
     width: 30%;
-    line-height: 70px;
     justify-content: space-around;
+}
+
+.vp-section__logo-link{
+    line-height: 70px;
     color: #333333;
     font-size: 1.4rem;
     letter-spacing: 1px;
     font-weight: 900;
     text-transform: capitalize;
     text-shadow: 1px 1px 1px rgb(255,255,255);
+    text-decoration: none;
 }
-  
+
 .vp-section__nav-list{
     display: flex;
     width: 50%;

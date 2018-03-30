@@ -14,7 +14,11 @@
 }
 
 .vp-block__input:focus{
-  
+  outline: none;
+}
+
+button:focus{
+  outline: none;
 }
 
 .vp-block__button{

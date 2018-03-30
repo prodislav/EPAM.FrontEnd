@@ -1,19 +1,5 @@
 <!--
     block__element_mod-name
-    width-s - 25%
-    width-m - 50%
-    width-l - 100%
-    height-s - 300px
-    height-m - 900px
-    !!!
-    -исправить модификаторы,
-    -добавить модификатор на размер шрифта
-    -поставлять блоки в другие элементы
-    -вынести модификаторы в отдельный css file
-    -добавить бургер с меню
-    -прописать медиа на шрифты
-    -пройтись по дизайну
-    </fieldset>
  -->
 
 <!DOCTYPE html>
@@ -43,23 +29,25 @@
 
             <div class="vp-section__nav">
 
-                <div class="vp-section__logo">stimulus</div>
+                <div class="vp-section__logo">
+                    <a href="#home" class="vp-section__logo-link">stimulus</a>
+                </div>
 
                 <div class="vp-section__nav-list">
                     <div class="vp-section__nav-item">
-                        <a href="#experiences" class="vp-section__nav-link">home</a>
+                        <a href="#home" class="vp-section__nav-link">home</a>
                     </div>
                     <div class="vp-section__nav-item">
-                        <a href="#experiences" class="vp-section__nav-link">about me</a>
+                        <a href="#about" class="vp-section__nav-link">about me</a>
                     </div>
                     <div class="vp-section__nav-item">
                         <a href="#experiences" class="vp-section__nav-link">experiences</a>
                     </div>
                     <div class="vp-section__nav-item">
-                        <a href="#experiences" class="vp-section__nav-link">testimonial</a>
+                        <a href="#testimonial" class="vp-section__nav-link">testimonial</a>
                     </div>
                     <div class="vp-section__nav-item">
-                        <a href="#experiences" class="vp-section__nav-link">contact</a>
+                        <a href="#contact" class="vp-section__nav-link">contact</a>
                     </div>
 
                     <div class="vp-section__nav-item-burger">
@@ -93,7 +81,7 @@
                                     Hello, I am <span class="vp-text__el_regular vp-text__el_capitalize">stimulus</span> currently based in New York city.
                                 </div>
                             </div>
-
+                            
                             <div class="vp-text">
                                 <div class="vp-block__discr">
                                     Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu,
@@ -102,7 +90,7 @@
                             </div>
 
                             <div class="vp-section__btn-pos">
-                                <button class="vp-section__btn">get started</button>
+                                <button class="vp-section__btn"><a href="#about" class="vp-section__btn-link">get started</a></button>
                             </div>
                         </div>
                     </div>
@@ -585,17 +573,16 @@
                             </div>
     
                             <div class="vp-text">
-                                <div class="vp-block__discr vp-text_thin vp-text__el_color-dark-yellow">
-                                    hello@compane.co
+                                <div class=" vp-text_thin">
+                                    <a href="mailto:hello@compane.co" class="vp-block__discr vp-text__contact-link vp-text__el_color-dark-yellow">hello@compane.co</a>
                                 </div>
                             </div>
 
                             <div class="vp-text">
-                                <div class=" vp-text_thin">
+                                <div class="vp-text_thin">
                                     <a href="" class="vp-block__discr vp-text__contact-link vp-text__el_color-dark-yellow">company.co</a>
                                 </div>
                             </div>
-    
 
                         </div>
                     </div>
@@ -605,36 +592,35 @@
         </div>
     </section>
 
-        <footer id="footer" class="vp-section">
-            <div class="vp-section__info-block vp-section__info-block_width-l">
-                
-                <div class="vp-block">
-                    <div class="vp-block__el vp-block__el_height-s">
-                        <div class="vp-block__content-footer">
-    
-                            <div class="vp-text">
-                                <div class="vp-block__discr vp-text_center">
-                                    <span class="vp-text__el_capitalize">Copyright 2016 your company | design:</span> <a href="#home">templatemo</a>
-                                </div>
+    <footer id="footer" class="vp-section">
+        <div class="vp-section__info-block vp-section__info-block_width-l">
+            <div class="vp-block">
+                <div class="vp-block__el vp-block__el_height-s">
+                    <div class="vp-block__content-footer">
+
+                        <div class="vp-text">
+                            <div class="vp-block__discr vp-text_center">
+                                <span class="vp-text__el_capitalize">Copyright 2016 your company | design:</span> <a href="#home">templatemo</a>
                             </div>
-        
-                            <div class="vp-text-icon">
-                                <div class="vp-text-icon__content">
-                                    <div class="vp-block__discr vp-text-icon__group vp-text_center vp-text__el_capitalize">
-                                        <i class="fa fa-facebook vp-text-icon__el" aria-hidden="true"></i>
-                                        <i class="fa fa-twitter vp-text-icon__el" aria-hidden="true"></i>
-                                        <i class="fa fa-google-plus vp-text-icon__el" aria-hidden="true"></i>
-                                        <i class="fa fa-dribbble vp-text-icon__el" aria-hidden="true"></i>
-                                        <i class="fa fa-linkedin vp-text-icon__el" aria-hidden="true"></i>
-                                    </div>
+                        </div>
+    
+                        <div class="vp-text-icon">
+                            <div class="vp-text-icon__content">
+                                <div class="vp-block__discr vp-text-icon__group vp-text_center vp-text__el_capitalize">
+                                    <i class="fa fa-facebook vp-text-icon__el" aria-hidden="true"></i>
+                                    <i class="fa fa-twitter vp-text-icon__el" aria-hidden="true"></i>
+                                    <i class="fa fa-google-plus vp-text-icon__el" aria-hidden="true"></i>
+                                    <i class="fa fa-dribbble vp-text-icon__el" aria-hidden="true"></i>
+                                    <i class="fa fa-linkedin vp-text-icon__el" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
-
             </div>
-        </footer>
+        </div>
+    </footer>
 
 </body>
 </html>

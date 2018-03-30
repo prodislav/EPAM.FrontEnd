@@ -68,8 +68,16 @@ body{
   border-radius: 25px;
   font-weight: 900;
   background-color: transparent;
-  color: #333333;
   text-transform: uppercase;
   padding: 13px 40px;
   margin-top: 50px;
+}
+
+.vp-section__btn-link{
+  text-decoration: none;
+  color: #333333;
+}
+
+button:hover{
+  cursor: pointer;
 }
