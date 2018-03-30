@@ -1,0 +1,28 @@
+.vp-block__content-footer{
+    width: 50%;
+  }
+  
+  .vp-text-icon__content{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .vp-text-icon__el{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+  
+  .vp-text-icon__group{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+  }
+  
+  .vp-block__content-info_height-big{
+    height: 90%;
+  }
+  
+  
