@@ -4,17 +4,22 @@
   border-bottom: 1px #e4ae58 solid;
   max-width: 400px;
 }
-  
+
 .vp-block__input::placeholder{
   font-family: 'SourceSansPro', sans-serif;
   color: white;
 }
+
 .vp-block__input::placeholder:focus{
   content: none;
 }
 
 .vp-block__input:focus{
-  
+  outline: none;
+}
+
+.vp-block__input{
+  overflow: auto;
 }
 
 .vp-block__button{
@@ -25,10 +30,17 @@
   border-radius: 20px;
 }
 
+.vp-block__button:hover{
+  cursor: pointer;
+}
+
+.vp-block__button:focus{
+  outline: none;
+}
+
 .vp-block__content-form{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
 }
-  
