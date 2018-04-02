@@ -44,11 +44,14 @@
 }
 
 .vp-section__nav-link:hover{
-    text-decoration: none;
     color: #e4ae58;
     font-weight: 600;
 }
-/* burger */
+
+.vp-nav-burger__checkbox {
+    display: none;
+}
+
 .vp-section__nav-item-burger:hover{
     cursor: pointer;
 }
@@ -59,41 +62,71 @@
     margin-top: 20px;
 }
 
-.burger-item{
+.vp-burger-item{
     width: 40px;
     height: 2px;
     border-radius: 2px;
     background-color: #333333;
     margin-bottom: 10px;
 }
-/*
-.vp-section__nav-adaptive{
-  position: fixed;
-  margin: 0;
-  padding: 15px 20px;
-  width: 200px;
-  min-width: 200px;
-  height: 600px;
-  top: 0;
-  right: -240px;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 2;
 
+.vp-nav-burger__checkbox:checked + .vp-nav-burger{
+    z-index: 101;
 }
 
-.vp-section__checkbox{
-  display: none;
-  position: absolute;
+.vp-nav-burger__checkbox:checked + .vp-nav-burger .vp-burger-item{
+    background-color: white;
+    width: 30px;
 }
 
-.vp-section__checkbox:checked~.vp-section__nav-adaptive{
-  right: 0;
-  overflow-y: auto;
+.vp-nav-burger__checkbox:checked + .vp-nav-burger .vp-burger-item-1{
+    transform: skewY(-45deg) translateX(-5px) translateY(15px);
 }
 
-.vp-section__checkbox:checked~.vp-section__nav-adaptive>.vp-section__nav-item-burger {
-    top: 0;
-    right: 2px;
-    left: auto;
-} */
+.vp-nav-burger__checkbox:checked + .vp-nav-burger .vp-burger-item-2{
+    width: 0;
+}
+
+.vp-nav-burger__checkbox:checked + .vp-nav-burger .vp-burger-item-3{
+    transform: skewY(45deg) translateX(-5px) translateY(2px);
+}
+
+.vp-section__nav-adaptive {
+    display: none;
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    box-shadow: inset 0 5px rgba(0, 0, 0, 0.5);
+    background-color: black;
+    z-index: 100;
+}
+
+.vp-nav-burger__checkbox:checked ~ .vp-section__nav-adaptive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vp-nav-burger__checkbox:checked ~ .vp-section__nav-adaptive > .vp-section__nav-adaptive-content{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    justify-content: space-around;
+}
+
+.vp-section__nav-item-adaptive{
+    text-align: center;
+}
+
+.vp-section__nav-item-link-adaptive{
+   text-transform: uppercase;
+   text-decoration: none;
+   color: white;
+   font-weight: 600;
+   font-size: 1.1rem;
+}
+
+.vp-section__nav-item-link-adaptive:hover{
+    color: #e4ae58;
+}
