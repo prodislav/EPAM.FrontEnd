@@ -41,12 +41,12 @@ body{
   margin-bottom: 20px;
   font-size: 2.5rem;
   font-weight: 300;
-  color: #333333;
+  color: white;
 }
 
 .vp-block__subtitle{
   margin-bottom: 20px;
-  color: #a99c93;
+  color: white;
   letter-spacing: 1px;
   font-size: 0.8rem;
 }
@@ -55,7 +55,29 @@ body{
   font-weight: 400;
   font-size: 1rem;
   line-height: 2rem;
-  color: #a99c93;
+  color: white;
+}
+
+.vp-text_dark{
+  color: #333333;
+}
+.vp-block_dark{
+  
+}
+.vp-text_dark-2{
+  color: #6e6c6f;
+}
+
+.vp-text__el-dark{
+  color: #6e6c6f;
+}
+
+.fa{
+  color: white;
+}
+
+.fa_dark{
+  color: #333333;
 }
 
 .vp-text__contact-link{
@@ -96,7 +118,7 @@ button:hover{
 }
 
 .vp-section__info-block_bg-color-black{
-  background-color: #333333;
+  background-color: #1c1c1c;
 }
 
 .vp-section__info-block_bg-color-white{
@@ -185,10 +207,15 @@ button:hover{
   color: white;
 }
 
-.vp-text__el_color-dark-yellow{
+.vp-text__el_color-dark-yellow,
+.vp-text_color-dark-yellow{
   color: #e4ae58;
 }
 
 .vp-text__el_size-l{
   font-size: 2rem;
+}
+
+.vp-text_white{
+  color: white;
 }

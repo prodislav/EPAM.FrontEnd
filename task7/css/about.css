@@ -33,7 +33,7 @@
     background-color: black;
   }
   
-  .vp-block__text-bar{
+  .vp-text__text-bar{
     display: flex;
     justify-content: space-between;
   }
@@ -60,7 +60,8 @@
     margin-top: -20px;
   }
   
-  .vp-block-company__container{
+  .vp-block-company__container,
+  .vp-text__container{
     display: flex;
   }
   
